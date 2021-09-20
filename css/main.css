@@ -252,8 +252,20 @@ nav .center {
 .boxes .box .top-corner .col-lg-10 img {
   width: 100%;
 }
+.boxes .box .top-corner .col-lg-2 ul {
+  position: relative;
+  left: 10px;
+}
 .boxes .box .top-corner .col-lg-2 ul li {
-  padding: 10px 0;
+  padding: 15px 0;
+}
+.boxes .box .top-corner .col-lg-2 ul li:first-child {
+  padding-top: 40px;
+}
+.boxes .box .top-corner .col-lg-2 ul .shopx img {
+  width: 50px;
+  margin-left: -5px;
+  margin-top: -5px;
 }
 .boxes .box .top-corner .col-lg-2 ul li:nth-child(3n) {
   margin-top: -25px;
@@ -267,7 +279,7 @@ nav .center {
 
 .boxes .box .bottom-corner {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 20px;
   text-transform: capitalize;
 }
 .boxes .box .bottom-corner h2 {
@@ -275,10 +287,13 @@ nav .center {
 }
 .boxes .box .bottom-corner span {
   color: var(--green);
+  margin-bottom: 10px;
+  display: inline-block;
 }
 .boxes .box .bottom-corner .flex {
   justify-content: center;
   padding-top: 10px;
+  border-top: 1px solid var(--gray);
 }
 .boxes .box .bottom-corner .flex h3 {
   padding-left: 5px;
@@ -314,12 +329,15 @@ nav .center {
 }
 .features .circle del {
   display: block;
-  margin-top: -30px;
+  margin-top: -43px;
+  position: relative;
+  left: 85px;
   font-weight: 600;
 }
 .features .circle h2 {
   color: #fff;
   font-size: 35px;
+  margin-left: -20px;
 }
 .features .first-box img {
   position: absolute;
@@ -375,6 +393,11 @@ nav .center {
   position: absolute;
   margin-top: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .features .secound-box .lava p {
+    padding-right: 250px;
+  }
+}
 .features .secound-box .lava h3 {
   color: #fff;
 }
@@ -385,6 +408,7 @@ nav .center {
 .features .secound-box .lava p {
   color: #fff;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 .features .secound-box .lava a {
   color: #fff;
@@ -449,3 +473,21 @@ footer a {
   color: var(--dark-gray);
 }
 /* end footer  */
+
+.pay {
+}
+.pay .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.pay .secound-div img {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  footer .first-row {
+    margin-right: 0;
+  }
+  .pay .flex {
+    flex-wrap: wrap;
+  }
+}
